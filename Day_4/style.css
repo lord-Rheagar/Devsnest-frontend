@@ -1,0 +1,145 @@
+body{
+    background-color: #0a192f;
+}
+.clock{
+    position:relative;
+    border: 20px solid #ffde64;
+    background: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    box-sizing: border-box;
+   position: absolute; 
+    margin:auto;
+    top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+    
+
+}
+
+.clock .twelve{
+    position: absolute;
+    width: 6px;
+    height: 8px;
+    background: #262626;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    
+}
+
+.clock .three {
+    position: absolute;
+    width: 7px;
+    height: 4px;
+    background: #262626;
+    left: 154px;
+    right: 0px;
+    margin: 71px auto;
+}
+
+.clock .six {
+    position: absolute;
+    width: 6px;
+    height: 8px;
+    background: #262626;
+    left: 0px;
+    right: 0px;
+    top: 152px;
+    margin: 0px auto;
+}
+
+.clock .nine {
+    position: absolute;
+    width: 7px;
+    height: 4px;
+    background: rgb(38, 38, 38);
+    left: -151px;
+    right: 0px;
+    margin: 71px auto;
+}
+
+.clock .center {
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #262626;
+    border-radius: 100%;
+}
+
+.clock .hour{
+
+    width: 3px;
+    height: 100%;
+    position: absolute;
+  
+    left: 0;
+    right: 0;
+  
+    margin: 0 auto;
+
+    /* transform: rotate(180deg); */
+
+    animation: time 60s infinite linear;
+    
+     
+}
+
+.clock .hour:before{
+    position: absolute;
+    content: "";
+    background: #262626;
+    height: 60px;
+    width: 3px;
+    top: 30px;
+}
+
+.clock .minute{
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /* transform: rotate(60deg); */
+
+    animation: time 30s infinite linear;
+}
+.clock .minute:before {
+    position: absolute;
+    content: "";
+    background: #262626;
+    height: 40px;
+    width: 1px;
+    top: 50px;
+}
+.clock .second {
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /* transform: rotate(55deg); */
+    animation: time 15s infinite linear;
+}
+.clock .second:before {
+    position: absolute;
+    content: "";
+    background: #fd1111;
+    height: 45px;
+    width: 2px;
+    top: 45px;
+}
+@keyframes time {
+    to {
+        transform: rotate(360deg);
+   }
+}
