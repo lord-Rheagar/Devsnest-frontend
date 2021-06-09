@@ -1,0 +1,42 @@
+body{
+        background: slategray;
+}
+fieldset {
+    margin: 20px auto;
+    width: 70%;
+    height:min-content;
+    background: snow;
+  }
+  
+  legend {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 3px 50px;
+  }
+  
+  ul {
+    padding: 0px;
+    list-style-position: inside;
+  }
+  
+  li {
+    font-size: 15px;
+  }
+  
+  .ul-list {
+    list-style-type: none;
+  }
+  
+  .container {
+    /* width: 60%; */
+    padding: 10px auto 10px auto;
+    position: relative;
+    padding: 6% 3% 6% 3%;
+    display: flex;
+    flex-direction: row;
+  }
+  .left {
+    margin-right: 30px;
+    border-right: 3px solid rgb(72, 117, 133);
+  }
