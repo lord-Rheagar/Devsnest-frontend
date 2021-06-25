@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+html{
+   
+    background: url(./img/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+}
+
+/* img {
+    height: 120px;
+    width: 120px;
+} */
+
+.memory-game{
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    perspective: 1000px;
+
+    flex-wrap: wrap;
+   
+}
+
+.memory-card{
+    width: 25%;
+    height: 33.333%;
+    /* margin: -0.9px; */
+    position: relative;  
+    transform: scale(1); 
+    transform-style: preserve-3d;
+    transition: transform .3s;
+}
+
+.memory-card:hover{
+    cursor: pointer;
+}
+
+.memory-card:active{
+    
+    transform: scale(.95);
+    transition: transform .2s;
+}
+
+.memory-card.flip{
+    transform: rotateY(180deg);
+}
+
+.front-face, .back-face{
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    position: absolute;
+    border-radius: 14px;
+    backdrop-filter: blur(15px);
+
+    backface-visibility: hidden;
+   
+    
+}
+
+.makebg{
+    
+    opacity: 0;
+}
+
+
+.front-face{
+    transform: rotateY(180deg);
+}
