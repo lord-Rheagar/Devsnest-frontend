@@ -1,0 +1,32 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.App{
+      position: absolute;
+      left: 25%;
+      top: 2%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+     border: none; 
+    width: 500px;
+    height: 120px;
+
+    background-color: green ;
+    border-radius: 20px;
+    
+
+    margin: 10px;
+    
+    
+
+
+}
